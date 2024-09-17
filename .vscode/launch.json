@@ -1,0 +1,17 @@
+{
+  // Use IntelliSense para saber los atributos posibles.
+  // Mantenga el puntero para ver las descripciones de los existentes atributos.
+  // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Maven",
+      "request": "launch",
+      "mainClass": "com.organization.App", // Reemplaza con la clase principal de tu proyecto
+      "projectName": "software",
+      "preLaunchTask": "mvn compile", // Opcional: Compila el proyecto antes de iniciar la depuración
+      "console": "internalConsole"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "mvn compile",
+      "type": "shell",
+      "command": "mvn",
+      "args": [
+        "compile"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },      
+      "presentation": {
+        "reveal": "never", // No muestra el terminal integrado
+        "panel": "dedicated" // Usa un panel de terminal dedicado para evitar compartir con otras tareas
+      }
+    }
+  ]
+}
