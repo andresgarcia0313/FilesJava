@@ -11,7 +11,6 @@ import java.nio.file.*; // Importar las clases necesarias para NIO.2 que permite
 import java.util.*; // Importar las clases necesarias para colecciones que funciona para almacenar objetos
 import java.util.stream.*; // Importar Stream para operaciones sobre archivos que funciona para procesar secuencias de elementos
 
-
 // Clase que representa un objeto que se puede serializar
 class Persona implements Serializable { // Implementar Serializable para que el objeto se pueda serializar
   private static final long serialVersionUID = 1L; // Versión de serialización para controlar la compatibilidad
@@ -75,8 +74,15 @@ public class App {
   }
 
   /**
-   * Método para deserializar un objeto desde un archivo.
-   * @param rutaArchivo
+   * @title Deserializar un objeto
+   * @name deserializarObjeto
+   * @description Método para deserializar un objeto desde un archivo.y
+   *              deserializar es convertir un objeto serializado en un objeto de
+   *              la clase original.
+   *              Método para deserializar un objeto desde un archivo.
+   * @param rutaArchivo Ruta del archivo que contiene el objeto serializado.
+   * @return El objeto deserializado se muestra en la consola sin retorno de
+   *         variable
    */
   private static void deserializarObjeto(Path rutaArchivo) {
     try (ObjectInputStream ois = new ObjectInputStream(Files.newInputStream(rutaArchivo))) {
